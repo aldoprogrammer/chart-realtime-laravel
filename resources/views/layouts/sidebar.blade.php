@@ -72,7 +72,7 @@
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">
-                        <i class="nav-icon fa-brands fa-intercom"></i>
+                        <i class="nav-icon fa-solid fa-lock"></i>
                         <p>
                             Administrator
                             <i class="right fas fa-angle-left"></i>
@@ -80,9 +80,9 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="../../index.html" class="nav-link">
+                            <a href="{{ route('users.index')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Admin</p>
+                                <p>User</p>
                             </a>
                         </li>
                         <li class="nav-item">
