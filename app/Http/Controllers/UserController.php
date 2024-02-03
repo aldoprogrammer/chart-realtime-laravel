@@ -43,11 +43,13 @@ class UserController extends Controller
             'password' => Hash::make($request->password),
         ]);
 
+
         if(!$user) {
+            dd('Debugging'); // Add this line for debugging
             return redirect()->back()->with('error', 'not success');
         }
 
-        return redirect()->route('users.create')->with('success', 'create succesfully');
+        return redirect()->route('users.index')->with('success', 'create succesfully');
     }
 
     /**
@@ -63,7 +65,8 @@ class UserController extends Controller
      */
     public function edit(string $id)
     {
-        return view('users.edit');
+        $users = User::find($id);
+        return view('users.edit', compact('users'));
     }
 
     /**
@@ -71,7 +74,23 @@ class UserController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $request->validate([
+            'name' => 'required|string',
+            'email' => 'required|email',
+        ]);
+
+        $user = User::find($id);
+        $user->name= $request->name;
+        $user->email= $request->email;
+        $user->save();
+
+
+        if(!$user) {
+            dd('Debugging'); // Add this line for debugging
+            return redirect()->back()->with('error', 'not success');
+        }
+
+        return redirect()->route('users.index')->with('success', 'update succesfully');
     }
 
     /**
@@ -79,6 +98,14 @@ class UserController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $user = User::find($id);
+        $user->delete();
+
+
+        if(!$user) {
+            dd('Debugging'); // Add this line for debugging
+            return redirect()->back()->with('error', 'not success');
+        }
+        return redirect()->route('users.index')->with('success', 'delete succesfully');
     }
 }
