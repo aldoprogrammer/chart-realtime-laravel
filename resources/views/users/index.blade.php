@@ -9,11 +9,11 @@
     <div class="card text-start">
         <div class="card-body">
             <div class="table-responsive-lg">
-                <div>Hello User Lists</div>
+                {!! $dataTable->table(['class' => 'table table-bordered'], true) !!}
             </div>
 
         </div>
     </div>
-
+     {!! $dataTable->scripts() !!}
 @endsection
 
