@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/plugins/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="/fontawesome-free-6.5.1-web/css/all.min.css">
     <link rel="stylesheet" href="/dist/css/adminlte.min.css?v=3.2.0">
-
+    <link rel="stylesheet" href="/plugins/jqvmap/jqvmap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js" integrity="sha512-nnzkI2u2Dy6HMnzMIkh7CPd1KX445z38XIu4jG1jGw7x5tSL3VBjE44dY4ihMU1ijAQV930SPM12cCFrB18sVw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -58,6 +58,9 @@
     <script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="/dist/js/adminlte.min.js?v=3.2.0"></script>
     <script src="/plugins/chart.js/Chart.bundle.js"></script>
+    <script src="/plugins/sparklines/sparkline.js"></script>
+    <script src="/plugins/jqvmap/jquery.vmap.min.js"></script>
+    <script src="/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
 
 
 
