@@ -58,9 +58,7 @@
     <script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="/dist/js/adminlte.min.js?v=3.2.0"></script>
     <script src="/plugins/chart.js/Chart.bundle.js"></script>
-    <script src="/plugins/sparklines/sparkline.js"></script>
-    <script src="/plugins/jqvmap/jquery.vmap.min.js"></script>
-    <script src="/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+
 
 
 
@@ -68,6 +66,11 @@
     <script src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap5.min.js"></script>
     <script src="https://cdn.datatables.net/buttons/2.4.2/js/dataTables.buttons.min.js"></script>
     <script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.bootstrap5.min.js"></script>
+
+
+    <script src="/plugins/jqvmap/jquery.vmap.min.js"></script>
+    <script src="/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+    <script src="/plugins/sparklines/sparkline.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'User List')
+@section('title', 'User')
 @section('content-header', 'User List')
 @section('content-action')
     <a href="{{route('users.create')}}"

@@ -1173,13 +1173,26 @@
   });
 
             // Chart bootstrap
+            var sales = {!! $sales !!};
+
+            const items= [];
+            const amount = [];
+
+            $.each(sales, function(key, val){
+                items.push(val.item);
+                amount.push(val.amount);
+            })
+
+            console.log(items);
+            console.log(amount);
+
             new Chart(document.getElementById("horizontalBar"), {
                 "type": "horizontalBar",
                 "data": {
-                    "labels": ["Red", "Orange", "Yellow", "Green", "Blue", "Purple", "Grey"],
+                    "labels": items,
                     "datasets": [{
                         "label": "My First Dataset",
-                        "data": [22, 33, 55, 12, 86, 23, 14],
+                        "data": amount,
                         "fill": false,
                         "backgroundColor": ["rgba(255, 99, 132, 0.2)", "rgba(255, 159, 64, 0.2)",
                             "rgba(255, 205, 86, 0.2)", "rgba(75, 192, 192, 0.2)",
